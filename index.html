@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="assets/style.css" />
+    <link rel="stylesheet" href="assets/tiny/tiny-slider.css" />
+  </head>
+  <body>
+    <div class="slider">
+      <div class="slides">
+        <div class="slide">
+          <img src="assets/img/img1.jpg" alt="Изображение 1" />
+          <button class="open-modal-btn">Открыть</button>
+        </div>
+        <div class="slide">
+          <img src="assets/img/img2.jpg" alt="Изображение 2" />
+          <button class="open-modal-btn">Открыть</button>
+        </div>
+        <div class="slide">
+          <img src="assets/img/img3.jpg" alt="Изображение 3" />
+          <button class="open-modal-btn">Открыть</button>
+        </div>
+        <div class="slide">
+          <img src="assets/img/img1.jpg" alt="Изображение 4" />
+          <button class="open-modal-btn">Открыть</button>
+        </div>
+        <div class="slide">
+          <img src="assets/img/img1.jpg" alt="Изображение 5" />
+          <button class="open-modal-btn">Открыть</button>
+        </div>
+      </div>
+    </div>
+
+    <div id="myModal" class="modal">
+      <span class="close" onclick="closeModal()">&times;</span>
+      <img class="modal-content" id="modalImg" />
+    </div>
+    <div class="button-group">
+      <button class="prev">Предыдущее</button>
+      <button class="next">Следующее</button>
+    </div>
+    <input type="file" id="fileInput" class="input" multiple />
+    <button id="addImagesBtn" class="addButon">
+      Добавить изображения в карусель
+    </button>
+    <script src="assets/tiny/tiny-slider.js"></script>
+    <script src="assets/script.js"></script>
+  </body>
+</html>
